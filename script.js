@@ -1,7 +1,14 @@
-// Mobile Navigation Toggle
+// Updated Mobile Navigation Toggle to change icon state
 function toggleMenu() {
     let menu = document.getElementById("navLinks");
+    let toggleBtn = document.querySelector(".menu-toggle");
     menu.classList.toggle("active");
+    
+    if (menu.classList.contains("active")) {
+        toggleBtn.textContent = "✕";
+    } else {
+        toggleBtn.textContent = "☰";
+    }
 }
 
 // Automatic Image Slider
